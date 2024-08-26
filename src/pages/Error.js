@@ -18,7 +18,7 @@ function Error() {
                 <Typography variant="h2" component="h2" gutterBottom>
                     OOPS! PAGE NOT FOUND
                 </Typography>
-                <Link to="/" style={{ textDecoration: "none" }}>
+                <Link to="/main" style={{ textDecoration: "none" }}>
                     <Button variant="contained" color="primary" size="large">
                         Back to Movies
                     </Button>

@@ -16,7 +16,7 @@ function FavoriteDetails() {
         favorites = favorites.filter((fav) => fav.id !== id);
         dispatch(decCounter());
         dispatch(changeFavorites(favorites));
-        if (favorites.length === 0) navigate("/");
+        if (favorites.length === 0) navigate("/main");
     }
 
     const imgPath = "https://image.tmdb.org/t/p/w500/";

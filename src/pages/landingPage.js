@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Typography, Button, Grid, Box, Card, CardContent, CardMedia } from '@mui/material';
 import { Link } from 'react-router-dom';
+import Register from '../components/Register';
+
 
 function LandingPage() {
   return (
@@ -14,9 +16,12 @@ function LandingPage() {
           Explore the latest movies, create your watchlist, and never miss out on what’s trending.
         </Typography>
         
-        <Button variant="contained" color="primary" sx={{ mt: 4 }} component={Link} 
-        to={`/`} >
-          Get Started
+        {/* <Button variant="contained" color="primary" sx={{ mt: 4 }} component={Link} 
+        to={`/main`} >
+         
+        </Button> */}
+        <Button component={Link} to="/main/register" variant="contained" color="primary" sx={{ mt:4 ,ml:2}}>
+        Get Started
         </Button>
        
       </Box>

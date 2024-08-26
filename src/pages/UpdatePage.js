@@ -35,7 +35,7 @@ function UpdatePage() {
 
         setTitle("");
         setVoteCount("");
-        navigate("/");
+        navigate("/main");
     }
 
     return (

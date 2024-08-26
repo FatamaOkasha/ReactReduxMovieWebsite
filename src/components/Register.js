@@ -59,7 +59,7 @@ function Register() {
           country: "",
           phone: "",
         });
-        navigate("/profile");
+        navigate("/main/profile");
       } else {
         alert("Username or Email already exists");
       }
@@ -79,7 +79,7 @@ function Register() {
           country: "",
           phone: "",
         });
-        navigate("/profile");
+        navigate("/main/profile");
       } else {
         alert("Invalid username or password");
       }

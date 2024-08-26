@@ -48,7 +48,7 @@ function MovieDetails() {
             )}
             <Button
                 component={Link}
-                to="/"
+                to="/main"
                 variant="contained"
                 color="primary"
                 sx={{ marginTop: 2 }}

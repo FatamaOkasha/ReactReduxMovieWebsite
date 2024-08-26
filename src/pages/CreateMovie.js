@@ -29,7 +29,7 @@ function CreateMovie() {
         setVoteCount("");
         setoriginalLanguage("");
         setvoteAverage("");
-        navigate("/");
+        navigate("/main");
     }
 
     return (

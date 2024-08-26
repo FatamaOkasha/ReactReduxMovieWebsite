@@ -55,7 +55,7 @@ function Profile() {
           </Typography>
         </Paper>
 
-        <Button component={Link} to="/" variant="contained" sx={{ backgroundColor: 'white', color: 'black'  ,marginLeft:"40%"}}>
+        <Button component={Link} to="/main" variant="contained" sx={{ backgroundColor: 'white', color: 'black'  ,marginLeft:"40%"}}>
           Explore Movies
         </Button>
       </Container>
