@@ -1,0 +1,78 @@
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
+import { startTransition } from "react";
+
+export const moviesAction=createAsyncThunk("movies/getAllMovies",
+    async()=>{
+       const res= await axios.get("http://localhost:8000/movies")
+       return res.data;
+    }
+    
+)
+export const deleteAction=createAsyncThunk("movies/deleteMovie",
+    async(id)=>{
+       const res= await axios.delete(`http://localhost:8000/movies/${id}`)
+       return id;
+    }
+    
+)
+export const updateAction=createAsyncThunk("movies/updateMovie",
+    async({id,updatedData})=>{
+       const res= await axios.put(`http://localhost:8000/movies/${id}`, updatedData)
+       return res.data;
+    }
+    
+)
+
+export const createAction=createAsyncThunk("movies/createMovie",
+    async(newMovie)=>{
+       const res= await axios.post(`http://localhost:8000/movies`, newMovie)
+       return res.data;
+    }
+    
+)
+
+
+const moviesSlice=createSlice(
+{
+    name:"movies",
+    initialState:{movies:[]  
+        // ,error:false,isloading:false 
+     },
+     reducers: {
+        setMovies: (state, action) => {
+            state.movies = action.payload;
+        }
+    },
+    extraReducers:(builder)=>{
+        builder.addCase(
+            moviesAction.fulfilled,(state,action)=>{
+                state.movies=action.payload
+            }   
+        )
+        .addCase(
+            deleteAction.fulfilled,(state,action)=>{
+                state.movies = state.movies.filter(movie => movie.id !== action.payload); 
+            } 
+        )
+        .addCase(
+              updateAction.fulfilled,(state,action)=>{
+                state.movies = state.movies.map(movie => movie.id === action.payload.id?action.payload:movie);
+              }
+        )
+        .addCase(
+            createAction.fulfilled,(state,action)=>{
+                state.movies.push(action.payload);
+            }
+      )
+        // builder.addCase(usersAction.rejected,(state,action)=>{
+        //     state.error=true
+        // }),
+        // builder.addCase(usersAction.pending),(state,action)=>{
+        //     state.isloading=true
+        // }
+    }
+}
+)
+export const { setMovies } = moviesSlice.actions;
+export default moviesSlice.reducer;
