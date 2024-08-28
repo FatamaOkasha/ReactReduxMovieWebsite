@@ -36,10 +36,10 @@ Ensure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
    
        cd user-management-system
    
-3.**Install Dependencies**
+3. **Install Dependencies**
 
        npm install
-4.**Start the Development Server**
+4. **Start the Development Server**
 
        npm start
 5. The application will be running at http://localhost:3000
