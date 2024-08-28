@@ -33,10 +33,10 @@ Ensure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
    git clone https://github.com/your-username/user-management-system.git
    
 2. **Navigate to Project Directory**
-      cd user-management-system
+   
+          cd user-management-system
    
 3.npm install
-
 4. npm start
 5. The application will be running at http://localhost:3000.
    
