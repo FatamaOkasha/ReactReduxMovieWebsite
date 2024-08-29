@@ -51,10 +51,10 @@ function Movies() {
   const imgPath = "https://image.tmdb.org/t/p/w500/";
 
   return (
-    <Grid container spacing={3} justifyContent="center">
+    <Grid container spacing={1} justifyContent="center">
       {movies.map((movie) => (
         <Grid item key={movie.id} xs={12} sm={6} md={4} lg={3}>
-          <Card sx={{ maxWidth: 345, m: 2 }}>
+          <Card sx={{ maxWidth: 345, m: 1 }}>
             <CardMedia
               component="img"
               height="300"

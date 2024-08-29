@@ -12,16 +12,17 @@ function Profile() {
         fontFamily: 'Arial, sans-serif',
         margin: 0,
         padding: 0,
-        background: 'linear-gradient(to right, #2c3e50, #3498db)',
+        background: 'linear-gradient(to right,  #8696FE 60%, #C4B0FF 80%)',
         color: '#333',
       
         height:"100vh",
        
       }}
-    >
+    > 
       <Box 
         sx={{
-          background: 'linear-gradient(to right, #2c3e50, #3498db)',
+          
+          background: 'linear-gradient(to right,  #8696FE 60%, #C4B0FF 80%)',
           color: '#ecf0f1',
           padding: '1em',
           textAlign: 'center'

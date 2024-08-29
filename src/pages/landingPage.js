@@ -8,7 +8,7 @@ function LandingPage() {
   return (
     <Container maxWidth="lg">
       {/* Hero Section */}
-      <Box sx={{ textAlign: 'center', py: 8, backgroundColor: '#000', color: '#fff' }}>
+      <Box sx={{ textAlign: 'center',mt:2, py: 8, backgroundColor: '#000', color: '#fff' }}>
         <Typography variant="h2" gutterBottom>
           Discover, Track, and Enjoy Your Favorite Movies
         </Typography>
@@ -20,7 +20,7 @@ function LandingPage() {
         to={`/main`} >
          
         </Button> */}
-        <Button component={Link} to="/main/register" variant="contained" color="primary" sx={{ mt:4 ,ml:2}}>
+        <Button component={Link} to="/register" variant="contained" color="primary" sx={{ mt:4 ,ml:2}}>
         Get Started
         </Button>
        
