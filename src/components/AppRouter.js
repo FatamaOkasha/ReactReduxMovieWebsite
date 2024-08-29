@@ -13,6 +13,7 @@ import CreateMovie from '../pages/CreateMovie';
 import Profile from '../pages/Profile';
 import LandingPage from '../pages/LandingPage';
 
+
 const AppRouter = () => {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
