@@ -1,24 +1,25 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-import { startTransition } from "react";
+
+const API_URL = process.env.REACT_APP_API_URL;
 
 export const moviesAction=createAsyncThunk("movies/getAllMovies",
     async()=>{
-       const res= await axios.get("http://localhost:8000/movies")
+       const res= await axios.get(`${API_URL}/movies`)
        return res.data;
     }
     
 )
 export const deleteAction=createAsyncThunk("movies/deleteMovie",
     async(id)=>{
-       const res= await axios.delete(`http://localhost:8000/movies/${id}`)
+       const res= await axios.delete(`${API_URL}/movies/${id}`)
        return id;
     }
     
 )
 export const updateAction=createAsyncThunk("movies/updateMovie",
     async({id,updatedData})=>{
-       const res= await axios.put(`http://localhost:8000/movies/${id}`, updatedData)
+       const res= await axios.put(`${API_URL}/movies/${id}`, updatedData)
        return res.data;
     }
     
@@ -26,7 +27,7 @@ export const updateAction=createAsyncThunk("movies/updateMovie",
 
 export const createAction=createAsyncThunk("movies/createMovie",
     async(newMovie)=>{
-       const res= await axios.post(`http://localhost:8000/movies`, newMovie)
+       const res= await axios.post(`${API_URL}/movies`, newMovie)
        return res.data;
     }
     
