@@ -11,7 +11,7 @@ import MovieModule from '../pages/MovieModule';
 import UpdatePage from '../pages/UpdatePage';
 import CreateMovie from '../pages/CreateMovie';
 import Profile from '../pages/Profile';
-import LandingPage from '../pages/LandingPage';
+import Landing from '../pages/Landing.js';
 
 
 const AppRouter = () => {
@@ -20,7 +20,7 @@ const AppRouter = () => {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <LandingPage />,
+      element: <Landing />,
       errorElement: <Error />,
     },
     {

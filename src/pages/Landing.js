@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Register from '../components/Register';
 
 
-function LandingPage() {
+function Landing() {
   return (
     <Container maxWidth="lg">
       {/* Hero Section */}
@@ -131,4 +131,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default Landing;
