@@ -11,7 +11,7 @@ import MovieModule from '../pages/MovieModule';
 import UpdatePage from '../pages/UpdatePage';
 import CreateMovie from '../pages/CreateMovie';
 import Profile from '../pages/Profile';
-import Landing from '../pages/Landing.js';
+import Landing from './Landing.js';
 
 
 const AppRouter = () => {

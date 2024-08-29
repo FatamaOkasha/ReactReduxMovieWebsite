@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Button, Grid, Box, Card, CardContent, CardMedia } from '@mui/material';
 import { Link } from 'react-router-dom';
-import Register from '../components/Register';
+import Register from './Register';
 
 
 function Landing() {
