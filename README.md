@@ -6,6 +6,13 @@
 Movie Website is a React-based web application that allows users to browse, manage, and interact with a collection of movies. It features a user-friendly interface built with Material-UI (MUI), state management with Redux, and integrates with a JSON server to handle CRUD operations for movie data.
 
 Deployed on this [link](https://react-redux-movie-website-1z8o.vercel.app/ "https://react-redux-movie-website-1z8o.vercel.app/")
+![image alt](https://github.com/FatamaOkasha/ReactReduxMovieWebsite/blob/master/movie-1.PNG?raw=true)
+![image alt](https://github.com/FatamaOkasha/ReactReduxMovieWebsite/blob/master/movie-2.PNG?raw=true)
+![image alt](https://github.com/FatamaOkasha/ReactReduxMovieWebsite/blob/master/movie-3.PNG?raw=true)
+![image alt](https://github.com/FatamaOkasha/ReactReduxMovieWebsite/blob/master/movie-4.PNG?raw=true)
+![image alt](https://github.com/FatamaOkasha/ReactReduxMovieWebsite/blob/master/movie-7.PNG?raw=true)
+![image alt](https://github.com/FatamaOkasha/ReactReduxMovieWebsite/blob/master/movie-8.PNG?raw=true)
+
 
 ## Features
 
