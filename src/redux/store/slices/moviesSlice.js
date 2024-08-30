@@ -1,25 +1,27 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL;
+
+// const API_URL = process.env.REACT_APP_API_URL;
+
 
 export const moviesAction=createAsyncThunk("movies/getAllMovies",
     async()=>{
-       const res= await axios.get(`${API_URL}/movies`)
+       const res= await axios.get(`https://my-json-server.typicode.com/FatamaOkasha/json-server/movies`)
        return res.data;
     }
     
 )
 export const deleteAction=createAsyncThunk("movies/deleteMovie",
     async(id)=>{
-       const res= await axios.delete(`${API_URL}/movies/${id}`)
+       const res= await axios.delete(`$https://my-json-server.typicode.com/FatamaOkasha/json-server/movies/${id}`)
        return id;
     }
     
 )
 export const updateAction=createAsyncThunk("movies/updateMovie",
     async({id,updatedData})=>{
-       const res= await axios.put(`${API_URL}/movies/${id}`, updatedData)
+       const res= await axios.put(`https://my-json-server.typicode.com/FatamaOkasha/json-server/movies/${id}`, updatedData)
        return res.data;
     }
     
@@ -27,7 +29,7 @@ export const updateAction=createAsyncThunk("movies/updateMovie",
 
 export const createAction=createAsyncThunk("movies/createMovie",
     async(newMovie)=>{
-       const res= await axios.post(`${API_URL}/movies`, newMovie)
+       const res= await axios.post(`https://my-json-server.typicode.com/FatamaOkasha/json-server/movies`, newMovie)
        return res.data;
     }
     
