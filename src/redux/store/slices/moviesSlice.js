@@ -7,7 +7,9 @@ import axios from "axios";
 
 export const moviesAction=createAsyncThunk("movies/getAllMovies",
     async()=>{
-       const res= await axios.get(`https://my-json-server.typicode.com/FatamaOkasha/json-server/movies`)
+       const res= await axios.get(`https://my-json-server.typicode.com/FatamaOkasha/json-server/movies`,{
+        maxContentLength: Infinity 
+      })
        return res.data;
     }
     
